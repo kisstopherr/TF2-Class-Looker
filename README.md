@@ -1,4 +1,6 @@
-#### Warning
+# Warning
+This project could be considered a `cheat` or `exploit`, but the script only uses infomation that the user already has access to. I do NOT condone cheating in games, and using this might get you `kicked` or `banned` from a server, so use at your own risk!
+
 
 # TF2-Class-Looker
 A script to find enemy players classes in TF2.
