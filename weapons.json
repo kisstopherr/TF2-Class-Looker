@@ -1,0 +1,11 @@
+{
+"scout" : ["scattergun", "pistol_scout", "bat"],
+"soldier" : ["tf_projectile_rocket", "shotgun_soldier", "shovel"],
+"pyro" : ["flamethrower", "shotgun_pyro", "fireaxe"],
+"demo" : ["tf_projectile_pipe_remote", "tf_projectile_pipe", "bottle"],
+"heavy" : ["minigun", "shotgun_hwg", "fists"],
+"engineer" : ["shotgun_primary", "pistol", "wrench", "obj_sentrygun3", "obj_sentrygun2", "obj_sentrygun1"],
+"medic" : ["syringegun_medic", "bonesaw"],
+"sniper" : ["sniperrifle", "smg", "club"],
+"spy" : ["revolver", "knife"]
+}
