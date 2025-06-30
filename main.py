@@ -5,6 +5,7 @@ import re
 
 tf2Path = "C:/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf"
 consoleOutputPath = f"{tf2Path}/console.txt"
+playerClasses = {}
 
 #               Open the weapons.json file
 with open('./weapons.json', 'r') as file:
@@ -28,10 +29,14 @@ def checkPlayerWeapon(msg):
                 break
     return(player, playerClass)
 
-
-
-
-
+def updateClass(player, newClass):
+    if player not in playerClasses:
+        playerClasses[player] = newClass
+        print(f"{player} is now a {newClass}")
+        
+    elif playerClasses[player] != newClass:
+        playerClasses[player] = newClass
+        print(f"{player} is now a {newClass}")
 
 if __name__ == "__main__":
 
@@ -53,7 +58,7 @@ if __name__ == "__main__":
                 for line in outputLines:
                     result = checkPlayerWeapon(line)
                     if result[1] != None:
-                        print(f"{result[0]} is a {result[1]}")
+                        updateClass(result[0], result[1])
 
 #               Clear the file only after processing all new lines
                 with open(consoleOutputPath, 'w', encoding='utf-8', errors="ignore") as file:
